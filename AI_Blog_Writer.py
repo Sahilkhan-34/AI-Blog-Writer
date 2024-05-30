@@ -45,7 +45,7 @@ def show_next_page():
     st.title("AI Blog Writer")
     st.subheader('Unleash the power of Generative AI to seamlessly generate amazing blogs.')
     apikey = st.text_input("Enter Google Gemini API Key Here", type='password')
-    if apikey:
+    if st.button("Submit") and apikey is not None:
    
         genai.configure(api_key=apikey)
 
@@ -63,6 +63,8 @@ def show_next_page():
             model = genai.GenerativeModel("gemini-1.5-flash-latest")
             response = model.generate_content([prompt])
             st.write(response.text)
+    else:
+        st.error("Enter Correct API Key")
 
 # Main app flow
 if "logged_in" not in st.session_state:
