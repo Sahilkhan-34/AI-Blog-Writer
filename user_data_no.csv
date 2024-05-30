@@ -1,0 +1,4 @@
+name,email,number,password,dob
+Pratik Jadhav,pratik@gmail.com,1234567890,password123,2002-02-01
+Sahil Khan,sahil@gmail.com,0987654321,password456,2000-02-02
+testuser,testuser@mail.com,0987654321,testpass,2000-02-03
