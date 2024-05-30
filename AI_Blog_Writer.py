@@ -44,7 +44,7 @@ def show_next_page():
     st.write(f"Hello, you are welcome {st.session_state['username']}!")
     st.title("AI Blog Writer")
     st.subheader('Unleash the power of Generative AI to seamlessly generate amazing blogs.')
-    apikey = st.text_input("Enter Google Gemini API Key Here")
+    apikey = st.text_input("Enter Google Gemini API Key Here", type='password')
     if apikey:
    
         genai.configure(api_key=apikey)
