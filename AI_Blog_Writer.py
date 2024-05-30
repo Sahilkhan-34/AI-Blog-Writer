@@ -21,6 +21,7 @@ user_data = pd.read_csv("user_data_no.csv")
 def show_login_form():
     st.title("AI Blog Writer")
     st.subheader("Login")
+    st.write("Use default login Email : 'testuser@mail.com' & Password : 'testpass' ")
     email = st.text_input("Email")
     password = st.text_input("Password", type="password")
 
