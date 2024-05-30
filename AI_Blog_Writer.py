@@ -63,8 +63,7 @@ def show_next_page():
             model = genai.GenerativeModel("gemini-1.5-flash-latest")
             response = model.generate_content([prompt])
             st.write(response.text)
-    else:
-        st.error("Enter Correct API Key")
+
 
 # Main app flow
 if "logged_in" not in st.session_state:
